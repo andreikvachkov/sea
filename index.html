@@ -36,7 +36,7 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="header__feedback">
+                <button class="header__feedback open-popup-button">
                     Заказать звонок
                 </button>
             </div>
@@ -1486,14 +1486,6 @@
                     <a class="politika" href="">
                         Политика конфиденциальности
                     </a>
-                    <div class="dev">
-                        <p>
-                            Разрабаотка
-                        </p>
-                        <a href="">
-                            Crazy.Stydio
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1526,6 +1518,78 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="assets/js/gsap.js"></script>
+    <div class="popupForm popupForm__open">
+        <div class="popup__container">
+            <button class="popup__close">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15" cy="15" r="15" fill="#E8BB8A" fill-opacity="0.3" />
+                    <g clip-path="url(#clip0_5538_2671)">
+                        <path
+                            d="M9.00417 20.9961C9.04481 21.0367 9.09306 21.069 9.14617 21.091C9.19928 21.113 9.25621 21.1244 9.31371 21.1244C9.3712 21.1244 9.42813 21.113 9.48124 21.091C9.53435 21.069 9.58261 21.0367 9.62324 20.9961L15.0001 15.6192L20.3792 20.9961C20.4613 21.0781 20.5726 21.1243 20.6887 21.1243C20.8048 21.1243 20.9161 21.0781 20.9982 20.9961C21.0803 20.914 21.1264 20.8026 21.1264 20.6865C21.1264 20.5704 21.0803 20.4591 20.9982 20.377L15.6192 15.0001L20.996 9.62105C21.0781 9.53896 21.1243 9.42762 21.1243 9.31152C21.1243 9.19543 21.0781 9.08408 20.996 9.00199C20.914 8.9199 20.8026 8.87378 20.6865 8.87378C20.5704 8.87378 20.4591 8.9199 20.377 9.00199L15.0001 14.3811L9.62105 9.00418C9.53736 8.9325 9.4297 8.89505 9.31959 8.89931C9.20948 8.90356 9.10503 8.9492 9.02712 9.02712C8.9492 9.10504 8.90355 9.20948 8.8993 9.31959C8.89505 9.4297 8.9325 9.53736 9.00417 9.62105L14.381 15.0001L9.00417 20.3792C8.92269 20.4612 8.87695 20.572 8.87695 20.6876C8.87695 20.8032 8.92269 20.9141 9.00417 20.9961Z"
+                            fill="#131313" fill-opacity="0.6" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_5538_2671">
+                            <rect width="14" height="14" fill="white" transform="translate(8 8)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </button>
+            <div class="popup__title">
+                <h2>
+                    Оставьте заявку
+                </h2>
+            </div>
+            <div class="popup__descr">
+                Оставляйте заявку и успейте получить специальные предложения и скидки
+            </div>
+            <form action="">
+                <div class="form__item">
+                    <input type="text" placeholder="Ваше имя">
+                </div>
+                <div class="form__item">
+                    <input type="text" placeholder="Ваш телефон">
+                </div>
+                <div class="custom-checkbox">
+                    <input type="checkbox" id="consent3" name="consent3" required>
+                    <label for="consent3">Я соглашась на обработку <a href="">персональных данных</a></label>
+                </div>
+                <button>
+                    Отправить заявку
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="popupForm popupThanks">
+        <div class="popup__container">
+            <button class="popup__close">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15" cy="15" r="15" fill="#E8BB8A" fill-opacity="0.3" />
+                    <g clip-path="url(#clip0_5538_2671)">
+                        <path
+                            d="M9.00417 20.9961C9.04481 21.0367 9.09306 21.069 9.14617 21.091C9.19928 21.113 9.25621 21.1244 9.31371 21.1244C9.3712 21.1244 9.42813 21.113 9.48124 21.091C9.53435 21.069 9.58261 21.0367 9.62324 20.9961L15.0001 15.6192L20.3792 20.9961C20.4613 21.0781 20.5726 21.1243 20.6887 21.1243C20.8048 21.1243 20.9161 21.0781 20.9982 20.9961C21.0803 20.914 21.1264 20.8026 21.1264 20.6865C21.1264 20.5704 21.0803 20.4591 20.9982 20.377L15.6192 15.0001L20.996 9.62105C21.0781 9.53896 21.1243 9.42762 21.1243 9.31152C21.1243 9.19543 21.0781 9.08408 20.996 9.00199C20.914 8.9199 20.8026 8.87378 20.6865 8.87378C20.5704 8.87378 20.4591 8.9199 20.377 9.00199L15.0001 14.3811L9.62105 9.00418C9.53736 8.9325 9.4297 8.89505 9.31959 8.89931C9.20948 8.90356 9.10503 8.9492 9.02712 9.02712C8.9492 9.10504 8.90355 9.20948 8.8993 9.31959C8.89505 9.4297 8.9325 9.53736 9.00417 9.62105L14.381 15.0001L9.00417 20.3792C8.92269 20.4612 8.87695 20.572 8.87695 20.6876C8.87695 20.8032 8.92269 20.9141 9.00417 20.9961Z"
+                            fill="#131313" fill-opacity="0.6" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_5538_2671">
+                            <rect width="14" height="14" fill="white" transform="translate(8 8)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </button>
+            <div class="popup__title">
+                <h2>
+                    Заявка отправлена
+                </h2>
+            </div>
+            <div class="popup__descr">
+                Наши менеджеры перезвонят вам в ближайшее время
+            </div>
+            <button class="popupThanks__close">
+                Закрыть
+            </button>
+        </div>
+    </div>
 </body>
 
 </html>

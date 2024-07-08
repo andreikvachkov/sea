@@ -234,4 +234,19 @@ jQuery(document).ready(function ($) {
     $('#galleryNextButton').on('click', function () {
         $('.gallery__slider').slick('slickNext');
     });
+
+
+    function openPopup() {
+        $('.popupForm__open').addClass('active');
+        $('body').addClass('no-scroll');
+    }
+
+    function closePopup() {
+        $('.popupForm__open').removeClass('active');
+        $('body').removeClass('no-scroll');
+    }
+
+    $('.popup__close').on('click', closePopup);
+
+    $('.open-popup-button').on('click', openPopup);
 });

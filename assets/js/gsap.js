@@ -238,7 +238,7 @@ window.addEventListener('load', function () {
                 "-=0.5"
             );
 
-        gsap.fromTo(".gallery__slider .gallery__item.slick-center .gallery__item__name",
+        gsap.fromTo(".gallery__slider ",
             {
                 opacity: 0,
                 y: 50
@@ -249,8 +249,8 @@ window.addEventListener('load', function () {
                 y: 0,
                 scrollTrigger: {
                     trigger: ".gallery",
-                    start: "top 60%",
-                    end: "top 40%",
+                    start: "top 80%",
+                    end: "top 60%",
                     toggleActions: "play none play reverse",
                 }
             }

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резиденция морей</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <header class="white">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__item">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    Планировки
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__item">
+                    <a class="header__logo" href="">
+                        <img src="assets/images/header__logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="header__item">
+                    <button class="header__feedback">
+                        Заказать звонок
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="catalog">
+        <div class="catalog__top">
+            <div class="container">
+                <div class="breadcrumb">
+                    <ul>
+                        <li>
+                            <a href="">
+                                Главная
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Планировки
+                            </a>
+                        </li>
+                        <li>
+                            1 комнатная квартира
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog__title">
+                    <h2>
+                        Планировочные решения
+                    </h2>
+                </div>
+                <div class="catalog__filter">
+                    <div class="catalog__filter__item">
+                        <p>
+                            Тип:
+                        </p>
+                        <div class="filter__dropdown filter__dropdown_width">
+                            <button id="dropbtn" class="filter__dropbtn">1-к квартира</button>
+                            <ul id="dropdown-content" class="filter__dropdown-content">
+                                <li><a href="#" data-value="Любой">Любой</a></li>
+                                <li><a href="#" data-value="Студия">Студия</a></li>
+                                <li><a href="#" data-value="1-к квартира">1-к квартира</a></li>
+                                <li><a href="#" data-value="2-к квартира">2-к квартира</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog__filter__price">
+                        <div class="item">
+                            <span>
+                                от
+                            </span>
+                            <input type="text" value="0">
+                            <span>
+                                млн
+                            </span>
+                        </div>
+                        <svg width="18" height="1" viewBox="0 0 18 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="0.5" x2="18" y2="0.5" stroke="black" />
+                        </svg>
+                        <div class="item">
+                            <span>
+                                до
+                            </span>
+                            <input type="text" value="100">
+                            <span>
+                                млн
+                            </span>
+                        </div>
+                    </div>
+                    <div class="catalog__filter__item">
+                        <p>
+                            Корпус:
+                        </p>
+                        <div class="filter__dropdown">
+                            <button id="dropbtn" class="filter__dropbtn">1</button>
+                            <ul id="dropdown-content" class="filter__dropdown-content">
+                                <li><a href="#" data-value="1">1</a></li>
+                                <li><a href="#" data-value="2">2</a></li>
+                                <li><a href="#" data-value="3">3</a></li>
+                                <li><a href="#" data-value="4">4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog__filter__item">
+                        <p>
+                            Этаж:
+                        </p>
+                        <div class="filter__dropdown">
+                            <button id="dropbtn" class="filter__dropbtn">1</button>
+                            <ul id="dropdown-content" class="filter__dropdown-content">
+                                <li><a href="#" data-value="1">1</a></li>
+                                <li><a href="#" data-value="2">2</a></li>
+                                <li><a href="#" data-value="3">3</a></li>
+                                <li><a href="#" data-value="24">24</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog__filter__button">
+                        <button class="enter">
+                            Применить
+                        </button>
+                        <button class="reset">
+                            Сбросить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catalog__main">
+            <div class="container">
+                <div class="catalog__count">
+                    Найдено : 142 квартиры
+                </div>
+                <div class="catalog__content">
+                    <div class="catalog__item">
+                        <div class="catalog__item__name">
+                            1 комнатная кв.
+                        </div>
+                        <div class="catalog__item__img">
+                            <img src="assets/images/catalog.png" alt="">
+                        </div>
+                        <div class="catalog__item__price">
+                            7 800 000 ₽
+                        </div>
+                        <div class="catalog__item__info">
+                            <ul>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Площадь:
+                                        </span>
+                                        <span class="text">
+                                            31,8 м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Корпус:
+                                        </span>
+                                        <span class="text">
+                                            B
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Подъезд, этаж:
+                                        </span>
+                                        <span class="text">
+                                            1,8
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item__name">
+                            1 комнатная кв.
+                        </div>
+                        <div class="catalog__item__img">
+                            <img src="assets/images/catalog.png" alt="">
+                        </div>
+                        <div class="catalog__item__price">
+                            7 800 000 ₽
+                        </div>
+                        <div class="catalog__item__info">
+                            <ul>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Площадь:
+                                        </span>
+                                        <span class="text">
+                                            31,8 м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Корпус:
+                                        </span>
+                                        <span class="text">
+                                            B
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Подъезд, этаж:
+                                        </span>
+                                        <span class="text">
+                                            1,8
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item__name">
+                            1 комнатная кв.
+                        </div>
+                        <div class="catalog__item__img">
+                            <img src="assets/images/catalog.png" alt="">
+                        </div>
+                        <div class="catalog__item__price">
+                            7 800 000 ₽
+                        </div>
+                        <div class="catalog__item__info">
+                            <ul>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Площадь:
+                                        </span>
+                                        <span class="text">
+                                            31,8 м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Корпус:
+                                        </span>
+                                        <span class="text">
+                                            B
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Подъезд, этаж:
+                                        </span>
+                                        <span class="text">
+                                            1,8
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item__name">
+                            1 комнатная кв.
+                        </div>
+                        <div class="catalog__item__img">
+                            <img src="assets/images/catalog.png" alt="">
+                        </div>
+                        <div class="catalog__item__price">
+                            7 800 000 ₽
+                        </div>
+                        <div class="catalog__item__info">
+                            <ul>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Площадь:
+                                        </span>
+                                        <span class="text">
+                                            31,8 м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Корпус:
+                                        </span>
+                                        <span class="text">
+                                            B
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Подъезд, этаж:
+                                        </span>
+                                        <span class="text">
+                                            1,8
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item__name">
+                            1 комнатная кв.
+                        </div>
+                        <div class="catalog__item__img">
+                            <img src="assets/images/catalog.png" alt="">
+                        </div>
+                        <div class="catalog__item__price">
+                            7 800 000 ₽
+                        </div>
+                        <div class="catalog__item__info">
+                            <ul>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Площадь:
+                                        </span>
+                                        <span class="text">
+                                            31,8 м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Корпус:
+                                        </span>
+                                        <span class="text">
+                                            B
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Подъезд, этаж:
+                                        </span>
+                                        <span class="text">
+                                            1,8
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item__name">
+                            1 комнатная кв.
+                        </div>
+                        <div class="catalog__item__img">
+                            <img src="assets/images/catalog.png" alt="">
+                        </div>
+                        <div class="catalog__item__price">
+                            7 800 000 ₽
+                        </div>
+                        <div class="catalog__item__info">
+                            <ul>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Площадь:
+                                        </span>
+                                        <span class="text">
+                                            31,8 м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Корпус:
+                                        </span>
+                                        <span class="text">
+                                            B
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Подъезд, этаж:
+                                        </span>
+                                        <span class="text">
+                                            1,8
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item__name">
+                            1 комнатная кв.
+                        </div>
+                        <div class="catalog__item__img">
+                            <img src="assets/images/catalog.png" alt="">
+                        </div>
+                        <div class="catalog__item__price">
+                            7 800 000 ₽
+                        </div>
+                        <div class="catalog__item__info">
+                            <ul>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Площадь:
+                                        </span>
+                                        <span class="text">
+                                            31,8 м2
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Корпус:
+                                        </span>
+                                        <span class="text">
+                                            B
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="3" cy="3" r="3" fill="#E8BB8A" />
+                                    </svg>
+                                    <div class="item">
+                                        <span class="name">
+                                            Подъезд, этаж:
+                                        </span>
+                                        <span class="text">
+                                            1,8
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__more">
+                    <button>
+                        Показать еще
+                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.50009 7.99997C6.43429 8.00035 6.36906 7.98774 6.30814 7.96286C6.24722 7.93797 6.19181 7.90131 6.14509 7.85497L3.14509 4.85497C3.05094 4.76082 2.99805 4.63312 2.99805 4.49997C2.99805 4.36682 3.05094 4.23912 3.14509 4.14497C3.23924 4.05082 3.36694 3.99792 3.50009 3.99792C3.63324 3.99792 3.76094 4.05082 3.85509 4.14497L6.50009 6.79497L9.14509 4.14997C9.24074 4.06806 9.36378 4.02525 9.48962 4.03011C9.61546 4.03498 9.73483 4.08714 9.82387 4.17619C9.91292 4.26524 9.96509 4.38461 9.96995 4.51044C9.97481 4.63628 9.93201 4.75932 9.85009 4.85497L6.85009 7.85497C6.75696 7.94734 6.63126 7.99942 6.50009 7.99997Z"
+                                fill="#131313" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__top__wrap">
+                    <div class="footer__top__left">
+                        <div class="line">
+                            <div>
+                                <p class="name">
+                                    Офис продаж
+                                </p>
+                                <p class="address">
+                                    г. Анапа, Пионерский проспект, 57/1
+                                </p>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="item">
+                                <p class="name">
+                                    Почта
+                                </p>
+                                <a href="" class="link">
+                                    sskuban.ru
+                                </a>
+                            </div>
+                            <div class="item">
+                                <p class="name">
+                                    Телефон
+                                </p>
+                                <a href="" class="link">
+                                    8 800 770 75 14
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__top__title">
+                        <h2>
+                            Воплотите в жизнь ваши самые теплые семейные мечты
+                        </h2>
+                    </div>
+                    <div class="footer__top__right">
+                        <a href="">
+                            <svg width="100" height="100" viewBox="0 0 100 100" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="49.5" stroke="#E8BB8A" />
+                                <g clip-path="url(#clip0_5476_632)">
+                                    <path
+                                        d="M47.4171 53.1814L47.0201 58.7654C47.5881 58.7654 47.8341 58.5214 48.1291 58.2284L50.7921 55.6834L56.3101 59.7244C57.3221 60.2884 58.0351 59.9914 58.3081 58.7934L61.9301 41.8214L61.9311 41.8204C62.2521 40.3244 61.3901 39.7394 60.4041 40.1064L39.1141 48.2574C37.6611 48.8214 37.6831 49.6314 38.8671 49.9984L44.3101 51.6914L56.9531 43.7804C57.5481 43.3864 58.0891 43.6044 57.6441 43.9984L47.4171 53.1814Z"
+                                        fill="#E8BB8A" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5476_632">
+                                        <rect width="24" height="24" fill="white" transform="translate(38 38)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg width="100" height="100" viewBox="0 0 100 100" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="49.5" stroke="#E8BB8A" />
+                                <g clip-path="url(#clip0_5476_636)">
+                                    <path
+                                        d="M50.003 38H49.997C43.3805 38 38 43.382 38 50C38 52.625 38.846 55.058 40.2845 57.0335L38.789 61.4915L43.4015 60.017C45.299 61.274 47.5625 62 50.003 62C56.6195 62 62 56.6165 62 50C62 43.3835 56.6195 38 50.003 38ZM56.9855 54.9455C56.696 55.763 55.547 56.441 54.6305 56.639C54.0035 56.7725 53.1845 56.879 50.4275 55.736C46.901 54.275 44.63 50.6915 44.453 50.459C44.2835 50.2265 43.028 48.5615 43.028 46.8395C43.028 45.1175 43.9025 44.279 44.255 43.919C44.5445 43.6235 45.023 43.4885 45.482 43.4885C45.6305 43.4885 45.764 43.496 45.884 43.502C46.2365 43.517 46.4135 43.538 46.646 44.0945C46.9355 44.792 47.6405 46.514 47.7245 46.691C47.81 46.868 47.8955 47.108 47.7755 47.3405C47.663 47.5805 47.564 47.687 47.387 47.891C47.21 48.095 47.042 48.251 46.865 48.47C46.703 48.6605 46.52 48.8645 46.724 49.217C46.928 49.562 47.633 50.7125 48.671 51.6365C50.0105 52.829 51.0965 53.21 51.485 53.372C51.7745 53.492 52.1195 53.4635 52.331 53.2385C52.5995 52.949 52.931 52.469 53.2685 51.9965C53.5085 51.6575 53.8115 51.6155 54.1295 51.7355C54.4535 51.848 56.168 52.6955 56.5205 52.871C56.873 53.048 57.1055 53.132 57.191 53.2805C57.275 53.429 57.275 54.1265 56.9855 54.9455Z"
+                                        fill="#E8BB8A" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5476_636">
+                                        <rect width="24" height="24" fill="white" transform="translate(38 38)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__bottom__wrap">
+                    <p>
+                        ©2024 Резиденция морей. Все права защищены
+                    </p>
+                    <a class="politika" href="">
+                        Политика конфиденциальности
+                    </a>
+                    <div class="dev">
+                        <p>
+                            Разрабаотка
+                        </p>
+                        <a href="">
+                            Crazy.Stydio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="" class="back__top">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_5476_643)">
+                <path
+                    d="M9.23525 1.26436L15.3637 7.39286C15.4939 7.52297 15.4939 7.73417 15.3637 7.86428C15.2336 7.9944 15.0224 7.9944 14.8923 7.86428L8.99954 1.9715L3.10673 7.86431C2.97661 7.99442 2.76542 7.99442 2.6353 7.86431C2.50519 7.73419 2.50519 7.523 2.6353 7.39288L8.76382 1.26436C8.89394 1.13425 9.10513 1.13425 9.23525 1.26436Z"
+                    fill="white" />
+                <path
+                    d="M9.23526 1.2647C9.29561 1.32504 9.33285 1.40848 9.33332 1.50041L9.3333 17.5288C9.3333 17.7127 9.18385 17.8621 9 17.8621C8.81615 17.8621 8.6667 17.7127 8.6667 17.5288L8.66668 1.50046C8.66668 1.3166 8.81617 1.16712 9.00002 1.16712C9.09148 1.16712 9.17492 1.20436 9.23526 1.2647Z"
+                    fill="white" />
+            </g>
+            <defs>
+                <clipPath id="clip0_5476_643">
+                    <rect width="18" height="18" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    </a>
+    <a href="" class="callback">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M13 15.6296C14.3933 15.6296 15.3333 14.6496 15.61 12.9362C15.6415 12.7151 15.6282 12.4899 15.5709 12.2741C15.5137 12.0582 15.4136 11.856 15.2767 11.6796L15.2233 11.6296L13.2 10.0296C12.8943 9.80064 12.5192 9.68366 12.1375 9.69823C11.7558 9.71279 11.3907 9.858 11.1033 10.1096L10.23 10.9362C8.41 10.5229 5.79667 8.1629 5.66667 6.4229L6.53 5.5129C6.77745 5.22405 6.91866 4.85925 6.93018 4.47907C6.94171 4.09889 6.82284 3.7262 6.59333 3.4229L5 1.40623C4.98337 1.38407 4.96308 1.3649 4.94 1.34957C4.76397 1.21307 4.56236 1.11324 4.34709 1.05599C4.13181 0.998738 3.90725 0.985219 3.68667 1.01623C1.98 1.29623 1 2.23623 1 3.62957C1 6.81216 2.26428 9.86441 4.51472 12.1148C6.76516 14.3653 9.8174 15.6296 13 15.6296ZM3.79333 1.67957C3.84105 1.67626 3.88895 1.67626 3.93667 1.67957C4.14207 1.68034 4.34225 1.74436 4.51 1.8629L6.06667 3.82957C6.20195 4.00947 6.27259 4.22975 6.26715 4.45478C6.2617 4.67981 6.1805 4.89642 6.03667 5.06957L5.09 6.06957C5.03245 6.13104 5.00029 6.21202 5 6.29623C5 8.4429 8.09667 11.2629 10.28 11.6296C10.3307 11.6379 10.3827 11.6345 10.4318 11.6194C10.481 11.6044 10.526 11.5782 10.5633 11.5429L11.5633 10.6062C11.7352 10.4596 11.9517 10.3755 12.1774 10.3677C12.4032 10.3598 12.625 10.4286 12.8067 10.5629L14.79 12.1229C14.9395 12.3298 15.0018 12.5872 14.9633 12.8396C14.8 13.8062 14.3333 14.9629 13 14.9629C9.99421 14.9629 7.11154 13.7689 4.98612 11.6434C2.86071 9.51803 1.66667 6.63535 1.66667 3.62957C1.66667 2.29623 2.82333 1.82957 3.79333 1.67957Z"
+                fill="white" />
+        </svg>
+    </a>
+
+    <script src="assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="assets/js/gsap.js"></script>
+</body>
+
+</html>
